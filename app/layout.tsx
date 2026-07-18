@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "YUAN — 独立设计师",
-  description: "YUAN 的个人作品网站：品牌、文化与数字体验。",
+  title: "Junyi Zheng｜AI 应用开发",
+  description: "Junyi Zheng 的个人求职网站：AI 应用开发、科研与开源实践。",
   openGraph: {
-    title: "YUAN — 让想法留下痕迹。",
-    description: "独立设计师，关注品牌、文化与数字体验。",
+    title: "Junyi Zheng｜AI 应用开发",
+    description: "AI 应用开发 · 科研与开源实践",
     images: ["/og.png"],
   },
 };
