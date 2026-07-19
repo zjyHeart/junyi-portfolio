@@ -8,53 +8,40 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
-      <nav class="nav" aria-label="主导航">
-        <a class="monogram" href="#top" aria-label="返回首页">J.</a>
-        <div class="nav-links"><a href="#research">研究</a><a href="#opensource">开源</a><a href="#about">关于</a><a href="#contact">联系</a></div>
-        <span class="availability"><i></i> 目前求职中</span>
-      </nav>
+    <main class="site-shell">
+      <aside class="side-index" aria-label="个人信息与页面索引">
+        <a class="mark" href="#top" aria-label="返回首页">J.</a>
+        <div class="identity"><h2>郑俊逸</h2><p>Junyi Zheng</p><p class="role">AI 应用开发者<br />研究者 · 开源开发者</p></div>
+        <nav class="section-index" aria-label="页面索引"><p>研究索引</p><a href="#top">01_ 首页</a><a href="#research">02_ 研究与写作</a><a href="#opensource">03_ 项目实践</a><a href="#about">04_ 能力画像</a></nav>
+        <div class="side-contact"><p>联系</p><a href="mailto:zheng_jun_yi@163.com">zheng_jun_yi@163.com</a><a href="https://github.com/zjyHeart" target="_blank" rel="noreferrer">github.com/zjyHeart</a><span>可接受 AI 应用开发机会</span></div>
+      </aside>
 
-      <section id="top" class="hero">
-        <p class="eyebrow">求职方向：AI 应用开发 · 研究者 · 开源开发者</p>
-        <aside class="profile-card" aria-label="Junyi Zheng 形象照">
-          <img src="assets/profile.png" alt="Junyi Zheng 形象照" />
-          <div class="profile-label"><span>PROFILE_01</span><span>RESEARCH · AI</span></div>
-        </aside>
-        <h1>研究复杂系统，<br /><em>构建实用工具。</em></h1>
-        <div class="hero-bottom"><p>我是 Junyi Zheng，专注于非线性动力学研究与 AI 应用开发。用扎实的建模能力与工程实践，把复杂问题转化为清晰、可靠的方案。</p><a class="round-link" href="#research">↓</a></div>
-      </section>
+      <div class="content">
+        <header class="topbar"><a class="mobile-mark" href="#top">J.</a><nav aria-label="主导航"><a href="#research">01 研究</a><a href="#opensource">02 开源</a><a href="#about">03 关于</a><a href="#contact">04 联系</a></nav><span>RESEARCH LOG · 2026</span></header>
 
-      <section id="research" class="section research-section">
-        <div class="section-heading"><p>研究成果</p><span>SCI Q1 · 中科院一区 TOP</span></div>
-        <article class="paper-card">
-          <div class="paper-visual"><img src="assets/paper-first-page.png" alt="论文首页" /><p>论文首页 · Chaos, Solitons &amp; Fractals</p></div>
-          <div class="paper-copy">
-            <p class="eyebrow">Chaos, Solitons &amp; Fractals · 2026</p>
-            <h2>Hybrid forcing control of entrainment transitions</h2>
-            <dl>
-              <div><dt>卷期信息</dt><dd>Vol. 210, Article 118699</dd></div>
-              <div><dt>作者</dt><dd>Junyi Zheng, Changgui Gu, Jiangsheng Wang, Guolin Wu</dd></div>
-              <div><dt>作者单位</dt><dd>上海理工大学；同济大学；桂林航天工业学院</dd></div>
-              <div><dt>项目支持</dt><dd>国家自然科学基金项目支持</dd></div>
-            </dl>
-            <p>研究混合强迫如何调控耦合振子群体中的锁频转变，结合理论分析与数值模拟，揭示相关性参数对连续与突变式 entrainment 转变的影响。</p>
-            <div class="tags"><span>非线性动力学</span><span>复杂系统</span><span>同步与锁频</span></div>
-            <a class="text-link" href="https://doi.org/10.1016/j.chaos.2026.118699" target="_blank" rel="noreferrer">查看论文 DOI →</a>
+        <section id="top" class="hero">
+          <div class="hero-copy">
+            <p class="kicker">ROLE　AI APPLICATION DEVELOPER<br />FOCUS　SYSTEMS · AGENTS · TOOLS</p>
+            <h1>研究复杂系统，<em>构建实用工具。</em></h1>
+            <p class="intro">专注于非线性动力学研究与 AI 应用开发。<br />用扎实的建模能力与工程实践，<br />把复杂问题转化为清晰、可靠的方案。</p>
+            <div class="focus-list"><span>建模</span><span>系统设计</span><span>工程实现</span><span>评估迭代</span></div>
           </div>
-        </article>
-      </section>
+          <figure class="portrait-panel"><img src="assets/profile.png" alt="Junyi Zheng 形象照" /><figcaption><span>PROFILE_01<br />RESEARCH · AI</span><span>AI 应用开发<br />系统研究</span></figcaption></figure>
+        </section>
 
-      <section id="opensource" class="section">
-        <div class="section-heading"><p>开源实践</p><a href="https://github.com/zjyHeart" target="_blank" rel="noreferrer">GitHub / zjyHeart →</a></div>
-        <div class="project-grid">
-          <article class="project"><img src="assets/knowledge-graph-cover.png" alt="知识图谱视觉图" /><h2>obsidian-knowledgeize</h2><small>Codex Skill · 知识管理</small><p>将普通 Markdown 转换为 Obsidian 知识库笔记：补充 frontmatter、标签、双向链接与导航结构，并控制上下文消耗。</p><a class="text-link" href="https://github.com/zjyHeart/obsidian-knowledgeize" target="_blank" rel="noreferrer">查看仓库 →</a></article>
-          <article class="project ochre"><img src="assets/chat-etl-cover.png" alt="聊天 ETL 数据处理视觉图" /><h2>chat_history_etl</h2><small>Java · Spring AI</small><p>面向用户自愿导入聊天记录的轻量 ETL 组件，支持 UTF-8 TXT、CSV、JSON 的提取、标准化、转换、切分与向量库加载。</p><a class="text-link" href="https://github.com/zjyHeart/chat_history_etl" target="_blank" rel="noreferrer">查看仓库 →</a></article>
-        </div>
-      </section>
+        <section class="credential-strip" aria-label="核心信息"><article><p>研究方向</p><strong>AI 应用开发 · 系统研究</strong><span>聚焦复杂系统的工程化与智能化</span></article><article><p>科研成果</p><strong>SCI Q1 论文</strong><span>第一作者 / 通讯作者团队</span></article><article><p>开源项目</p><strong>知识工具与 ETL 实践</strong><span>面向真实工作流的可复用工具</span></article><article><p>联系合作</p><strong>欢迎交流</strong><span>求职方向：AI 应用开发</span></article></section>
 
-      <section id="about" class="about-section"><p class="eyebrow">关于我</p><div><h2>用研究能力理解问题，用工程能力<span>交付结果。</span></h2><p>我关注复杂系统中的集体动力学，也持续将 AI 与知识管理能力沉淀为可复用的开源工具。期待在研究、算法、AI 应用或软件工程场景中创造实际价值。</p><div class="tags"><span>复杂系统建模</span><span>非线性动力学</span><span>AI 应用开发</span><span>知识工程</span></div></div></section>
-      <section id="contact" class="contact-section"><p class="eyebrow">期待交流机会</p><a href="mailto:zheng_jun_yi@163.com">zheng_jun_yi@163.com <span>→</span></a><footer>© 2026 JUNYI ZHENG · AI 应用开发 / 研究 / 开源</footer></section>
+        <section id="research" class="paper-section section-block">
+          <div class="section-label"><span>01</span><p>研究与写作</p></div>
+          <div class="paper-layout"><div class="paper-image"><img src="assets/paper-first-page.png" alt="论文 Hybrid forcing control of entrainment transitions 首页" /></div><article class="paper-copy"><p class="eyebrow">CHAOS, SOLITONS &amp; FRACTALS · 2026</p><h2>Hybrid forcing control of entrainment transitions</h2><p>探究混合强迫如何调控耦合振子群体的锁频转变，结合理论分析与数值模拟，为复杂系统的可控演化提供解释框架。</p><dl><div><dt>卷期</dt><dd>Vol. 210 · Article 118699</dd></div><div><dt>作者</dt><dd>Junyi Zheng, Changgui Gu, Jiangsheng Wang, Guolin Wu</dd></div><div><dt>支持</dt><dd>国家自然科学基金项目支持</dd></div></dl><a class="under-link" href="https://doi.org/10.1016/j.chaos.2026.118699" target="_blank" rel="noreferrer">阅读论文与 DOI</a></article></div>
+        </section>
+
+        <section id="opensource" class="projects-section section-block"><div class="section-label"><span>02</span><p>项目实践</p></div><div class="project-list"><article class="project-row"><div class="project-number">01</div><div class="project-body"><p>KNOWLEDGE TOOL</p><h2>obsidian-knowledgeize</h2><span>把 Markdown 转化为具备 frontmatter、标签、双向链接与导航结构的 Obsidian 知识库笔记。</span></div><div class="stack">Codex Skill<br />Knowledge Management</div><a href="https://github.com/zjyHeart/obsidian-knowledgeize" target="_blank" rel="noreferrer">查看仓库</a></article><article class="project-row"><div class="project-number">02</div><div class="project-body"><p>DATA PIPELINE</p><h2>chat_history_etl</h2><span>面向自愿导入聊天记录的轻量 ETL 组件，支持提取、标准化、切分与向量库加载。</span></div><div class="stack">Java · Spring AI<br />ETL</div><a href="https://github.com/zjyHeart/chat_history_etl" target="_blank" rel="noreferrer">查看仓库</a></article></div></section>
+
+        <section id="about" class="about-section section-block"><div class="section-label"><span>03</span><p>能力画像</p></div><div class="about-copy"><h2>从复杂问题中提炼结构，<em>从研究走向可用工具。</em></h2><p>我将复杂系统建模、算法理解与工程实现连接起来，持续把研究中的思考沉淀为可复用的 AI 应用和开源工具。</p><div class="capability-list"><span>复杂系统建模</span><span>非线性动力学</span><span>AI 应用开发</span><span>知识工程</span></div></div></section>
+
+        <footer id="contact" class="footer"><p>AVAILABLE FOR RESEARCH COLLABORATION &amp; AI PROJECTS</p><a href="mailto:zheng_jun_yi@163.com">zheng_jun_yi@163.com</a><span>© 2026 JUNYI ZHENG</span></footer>
+      </div>
     </main>
   </body>
 </html>
